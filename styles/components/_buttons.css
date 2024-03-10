@@ -1,0 +1,31 @@
+.button{
+  padding: 1.1rem 3rem;
+  border-radius: 1rem;
+  color: var(--white);
+  transition: .3s;
+  cursor: pointer;
+}
+
+/*Modifiers*/
+.button--primary{
+  background-color: var(--blue--primary);
+  border: 2px solid var(--blue--primary);
+}
+.button--secondary{
+  background-color: var(--blue--secondary);
+  border: 2px solid var(--blue--secondary);
+}
+
+/*Hover effects*/
+.button--primary:hover{
+  background-color: transparent;
+  color: var(--blue--primary);
+}
+.button--secondary:hover{
+   background-color: transparent;
+  color: var(--blue--secondary);
+}
+/*Active effects*/
+.button:active{
+  opacity: .5;
+}

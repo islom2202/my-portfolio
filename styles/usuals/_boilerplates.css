@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Space Grotesk", sans-serif;
+  src: url(../../assets/fonts/SpaceGrotesk-Bold.ttf);
+}
+@font-face {
+  font-family: "Red Hat Display", sans-serif;
+  src: url(../../assets/fonts/RedHatDisplay-Regular.ttf);
+}
+*{
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Red Hat Display", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  -webkit-tap-highlight-color: transparent;
+}

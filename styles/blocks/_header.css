@@ -1,0 +1,29 @@
+@import url(../usuals/_breakpoints.css);
+@import url(../usuals/_colors.css);
+
+/*Mobile*/
+.header{
+  padding-inline: var(--mobile-inline);
+  padding-block: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1{
+  color: var(--blue--tertiary);
+  letter-spacing: .1rem;
+}
+.header__nav ul{
+  display: flex;
+  gap: 3rem;
+}
+.header__nav ul li a{
+  display: flex;
+  align-items: center;
+  color: var(--gray);
+}
+.header__nav ul li:first-child a, .header__nav ul li:hover a {
+ color: var(--black);
+}
+
+/*Tablet*/

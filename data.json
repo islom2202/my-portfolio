@@ -1,0 +1,24 @@
+{
+  "languages": {
+    "english": {
+      "header": {
+        "logo": "Islomjon Saidaliev",
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "cv": "CV",
+        "btn": "Get in touch"
+      }
+    },
+    "russian": {
+      "header": {
+        "logo": "Исломджон Саидалиев",
+        "home": "Главная",
+        "about": "О нас",
+        "projects": "Проекты",
+        "cv": "Резюме",
+        "btn": "Связаться"
+      }
+    }
+  }
+}
