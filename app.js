@@ -8,37 +8,31 @@ const about = document.querySelector(".about")
 const projects = document.querySelector(".projects")
 const cv = document.querySelector(".cv")
 const btn = document.querySelector("header button")
+const burger = document.querySelector(".burger")
+// sidebar selectors
+const sidebar = document.querySelector(".sidebar__nav ul")
 
-// data
-const data = {
-  english: {
-    header: {
-      logo: "Islomjon Saidaliev",
-      home: "Home",
-      about: "About",
-      projects: "Projects",
-      cv: "CV",
-      btn: "Get in touch",
-    },
-  },
-  russian: {
-    header: {
-      logo: "Исломджон Саидалиев",
-      home: "Главная",
-      about: "О нас",
-      projects: "Проекты",
-      cv: "Резюме",
-      btn: "Связаться",
-    },
-  },
+// handle-sidebar
+burger.onclick = () => {
+  if(burger.innerHTML == "menu"){
+    burger.innerHTML = "close";
+    sidebar.style.right = "0"
+  }else{
+    burger.innerHTML = "menu"
+    sidebar.style.right = "-100%"
+  }
+
 }
-
+//data
+let data = null
+const fetchData = fetch("data.json")
+  .then((res) => res.json())
+  .then((content) => data = content)
 // switch languages
 languages.onchange = (e) => {
-  logo.textContent = data[`${e.target.value}`].header.logo
-  home.textContent = data[`${e.target.value}`].header.home
-  about.textContent = data[`${e.target.value}`].header.about
-  projects.textContent = data[`${e.target.value}`].header.projects
-  cv.textContent = data[`${e.target.value}`].header.cv
-  btn.textContent = data[`${e.target.value}`].header.btn
+  // header-data
+  const header = [logo, home, about, projects, cv, btn]
+  header.forEach((selector) =>
+    selector.textContent = data[`${e.target.value}`].header[selector.getAttribute("data-name")]
+  )
 };

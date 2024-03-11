@@ -11,18 +11,18 @@
 <body>
   <!--header-->
   <header class="header">
-    <h1 class="header__logo">
+    <h1 class="header__logo" data-name="logo">
        Islomjon Saidaliev
     </h1>
     <nav class="header__nav">
       <ul>
-        <li><a href="#" class="home">Home</a></li>
-        <li><a href="#" class="about">About</a></li>
-        <li><a href="#" class="projects">Projects</a></li>
+        <li><a href="#" class="home" data-name="home">Home</a></li>
+        <li><a href="#" class="about" data-name="about">About</a></li>
+        <li><a href="#" class="projects" data-name="projects">Projects</a></li>
         <li>
           <a href="#">
             <span class="material-symbols-rounded">download</span>
-            <span class="cv">CV</span>
+            <span class="cv" data-name="cv">CV</span>
           </a>
         </li>
         <li>
@@ -34,11 +34,38 @@
         </li>
       </ul>
     </nav>
-    <button class="button button--secondary">Get in touch</button>
+    <button class="button button--secondary" data-name="btn">Get in touch</button>
+    <span class="material-symbols-rounded burger" tabindex="0">menu</span>
   </header>
+  <aside>
+    <nav class="sidebar__nav">
+      <ul>
+        <li><a href="#" class="home" data-name="home">Home</a></li>
+        <li><a href="#" class="about" data-name="about">About</a></li>
+        <li><a href="#" class="projects" data-name="projects">Projects</a></li>
+        <li>
+          <a href="#">
+            <span class="material-symbols-rounded">download</span>
+            <span class="cv" data-name="cv">CV</span>
+          </a>
+        </li>
+        <li>
+          <select class="header__nav__languages">
+            <option value="english" class="lang">En</option>
+            <option value="russian" class="lang">Ru</option>
+            <option value="tajik"  class="lang">Tj</option>
+          </select>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
   <main>
-    <p>Hello</p>
-    <h1>Islomjon</h1>
+    <article class="hero">
+      <div class="img-wrapper">
+        <img src="assets/images/hero.png" alt="hero" >
+      </div>
+    </article>
   </main>
   <footer></footer>
   <script type="module" src="app.js"></script>

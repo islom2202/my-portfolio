@@ -1,10 +1,12 @@
+/*Note that for now native variables do not work in media queries*/
 :root{
   --mobile: 375px;
   --tablet: 768px;
+  --tablet-xl: 900px;
   --desktop: 1450px;
   --desktop-xl: 1800px;
   --mobile-inline: 5%;
-  --tablet-inline: 7%;
+  --tablet-xl-inline: 7%;
   --desktop-inline: 10%;
   --desktop-xl-inline:20%;
 }

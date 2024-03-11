@@ -1,21 +1,21 @@
-@import url(../usuals/_breakpoints.css);
-@import url(../usuals/_colors.css);
+@import url(../usuals/breakpoints.module.css);
+@import url(../usuals/colors.module.css);
 
 /*Mobile*/
 .header{
   padding-inline: var(--mobile-inline);
   padding-block: 3rem;
+  height: 8rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header h1{
-  color: var(--blue--tertiary);
+.header h1{
+  color: var(--blue--secondary);
   letter-spacing: .1rem;
 }
 .header__nav ul{
-  display: flex;
-  gap: 3rem;
+  display: none;
 }
 .header__nav ul li a{
   display: flex;
@@ -25,5 +25,37 @@ header h1{
 .header__nav ul li:first-child a, .header__nav ul li:hover a {
  color: var(--black);
 }
+.header .burger{
+  padding: .5rem;
+  cursor: pointer;
+  user-select: none;
+  position: fixed;
+  top: 2rem;
+  right: 5%;
+}
+.header .burger:focus{
+  border: 1px dotted black;
+  color: var(--gray);
+}
 
-/*Tablet*/
+.header button{
+  display: none;
+}
+
+/*Tablet-xl*/
+@media (min-width: 900px) {
+  .header{
+    padding-inline: var(--tablet-xl-inline);
+  }
+  .header__nav ul{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  .header button{
+    display: block;
+  }
+  .header .burger{
+    display: none;
+  }
+}

@@ -16,4 +16,11 @@
   text-decoration: none;
   list-style: none;
   -webkit-tap-highlight-color: transparent;
+  transition: .3s;
+}
+select{
+  background-color: transparent;
+}
+body{
+  overflow-x: hidden;
 }
