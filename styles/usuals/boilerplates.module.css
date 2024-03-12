@@ -21,6 +21,9 @@
 select{
   background-color: transparent;
 }
+.hidden{
+  display: none;
+}
 body{
   overflow-x: hidden;
 }

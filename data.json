@@ -1,7 +1,6 @@
 {
     "english": {
       "header": {
-        "logo": "Islomjon Saidaliev",
         "home": "Home",
         "about": "About",
         "projects": "Projects",
@@ -11,7 +10,6 @@
     },
     "russian": {
       "header": {
-        "logo": "Исломджон Сайдалиев",
         "home": "Главная",
         "about": "Обо мне",
         "projects": "Проекты",
@@ -21,7 +19,6 @@
     },
     "tajik": {
       "header": {
-        "logo": "Исломҷон Сайдалиев",
         "home": "Асосӣ",
         "about": "Дар бораи ман",
         "projects": "Лоиҳаҳо",

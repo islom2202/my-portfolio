@@ -14,8 +14,9 @@
   top: 8rem; /*headers height*/
   right: -100%;
   padding: 4rem;
-  background-color: white;
-  border-left: 1px dashed rgba(0, 0, 0, 0.276);
+  background-color: var(--gray-primary);
+  border-left: 1px dashed rgba(0, 0, 0, 0.2);
+  z-index: 99;
 }
 .sidebar__nav ul li a{
   display: flex;

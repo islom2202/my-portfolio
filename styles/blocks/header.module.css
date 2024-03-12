@@ -1,61 +1,64 @@
 @import url(../usuals/breakpoints.module.css);
 @import url(../usuals/colors.module.css);
 
-/*Mobile*/
+/*mobile*/
 .header{
-  padding-inline: var(--mobile-inline);
-  padding-block: 3rem;
-  height: 8rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding-inline: var(--mobile-inline); padding-block: 3rem; height: 8rem;
+  display: flex; align-items: center; justify-content: space-between;
+  background-color: var(--gray-primary);
+  position: sticky; inset: 0 auto auto 0; z-index: 99;
+  animation: scroll-down forwards; animation-timeline: scroll();
+  animation-range-start: 8rem; animation-range-end: 8rem;
+}
+@keyframes scroll-down {
+  to{
+    border-bottom: .1rem dotted var(--gray-secondary);
+  }
 }
 .header h1{
-  color: var(--blue--secondary);
-  letter-spacing: .1rem;
+  color: var(--blue--secondary); letter-spacing: .1rem;
+  display: flex; align-items: center; gap: 1rem;
 }
 .header__nav ul{
   display: none;
 }
 .header__nav ul li a{
-  display: flex;
-  align-items: center;
-  color: var(--gray);
+  display: flex; align-items: center; color: var(--gray-secondary);
 }
 .header__nav ul li:first-child a, .header__nav ul li:hover a {
  color: var(--black);
 }
 .header .burger{
-  padding: .5rem;
-  cursor: pointer;
-  user-select: none;
-  position: fixed;
-  top: 2rem;
-  right: 5%;
+  padding: .5rem; cursor: pointer; user-select: none;
+  position: fixed; top: 2rem; right: 5%;
 }
 .header .burger:focus{
-  border: 1px dotted black;
-  color: var(--gray);
+  border: 1px dotted black; color: var(--gray-secondary);
 }
 
 .header button{
   display: none;
 }
 
-/*Tablet-xl*/
+/*tablet-xl*/
 @media (min-width: 900px) {
   .header{
     padding-inline: var(--tablet-xl-inline);
   }
   .header__nav ul{
-    display: flex;
-    align-items: center;
-    gap: 3rem;
+    display: flex; align-items: center; gap: 3rem;
   }
   .header button{
     display: block;
   }
   .header .burger{
     display: none;
+  }
+}
+
+/*desktop*/
+@media (min-width: 1450px) {
+  .header{
+    padding-inline: var(--desktop-inline);
   }
 }

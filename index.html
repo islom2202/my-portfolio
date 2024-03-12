@@ -13,8 +13,10 @@
   <header class="header">
     <h1 class="header__logo" data-name="logo">
        Islomjon Saidaliev
+       <span class="material-symbols-rounded">subtitles</span>
     </h1>
     <nav class="header__nav">
+      <h2 class="hidden">header navigation</h2>
       <ul>
         <li><a href="#" class="home" data-name="home">Home</a></li>
         <li><a href="#" class="about" data-name="about">About</a></li>
@@ -38,7 +40,8 @@
     <span class="material-symbols-rounded burger" tabindex="0">menu</span>
   </header>
   <aside>
-    <nav class="sidebar__nav">
+    <h2 class="hidden">sidebar navigation</h2>
+    <div class="sidebar__nav">
       <ul>
         <li><a href="#" class="home" data-name="home">Home</a></li>
         <li><a href="#" class="about" data-name="about">About</a></li>
@@ -58,13 +61,40 @@
         </li>
         <li><a href="#">Contact</a></li>
       </ul>
-    </nav>
+    </div>
   </aside>
   <main>
-    <article class="hero">
-      <div class="img-wrapper">
+    <!--hero-->
+    <figure class="hero">
+      <figcaption class="hero__figcaption">
+        <h2>Frontend developer creating unique websites</h2>
+        <p>Hi, I’m Islom, a web developer from Dushanbe. I love working on creative projects that challenge myself.</p>
+        <nav class="hero__figcaption__navs">
+          <button class="button button--primary">Get in touch</button>
+          <a href="#">
+            <span>View my projects</span> 
+            <span class="material-symbols-rounded">double_arrow</span>
+          </a>
+        </nav>
+      </figcaption>
+      <div class="hero__image-wrapper">
         <img src="assets/images/hero.png" alt="hero" >
       </div>
+    </figure>
+    <!--projects-article-->
+    <article class="projects-article">
+      <h3 class="projects-article__heading">Latest Projects</h3>
+      <section class="projects-article__list">
+          <figure class="projects-article__list__item">
+            <img src="assets/images/softclub-1.png" alt="softclub">
+            <figcaption>
+              <mark>Frontend Part</mark>
+              <h4>SoftClub</h4>
+              <p>Softclub provides high-quality bootcamps and the best instructors to teach you programming</p>
+              <a class="button button--tertiary" href="https://softclub.vercel.app/" target="_blank">View Project</a>
+            </figcaption>
+          </figure>
+      </section>
     </article>
   </main>
   <footer></footer>

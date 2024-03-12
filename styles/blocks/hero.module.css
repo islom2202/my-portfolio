@@ -1,12 +1,56 @@
-
-.hero img{
-  border-radius: 100%;
+@import url(../usuals/breakpoints.module.css);
+@import url(../usuals/colors.module.css);
+/*mobile*/
+.hero{
+  padding-inline: var(--mobile-inline);
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 3rem;
+  background-color: var(--gray-primary);
 }
-.img-wrapper{
+.hero__figcaption{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--blue--tertiary);
+  max-width: 50rem;
+  text-align: center;
+}
+.hero__figcaption__navs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.hero__figcaption__navs a{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  color: var(--blue--primary);
+}
+.hero__figcaption__navs a span:nth-child(2){
+ animation: bounce-to-right 1.5s linear infinite;
+}
+@keyframes bounce-to-right {
+  30%{
+    transform: translateX(1rem);
+  }
+  60%{
+    transform: translateX(.5rem);
+  }
+  90%{
+    transform: translateX(1rem);
+  }
+  100%{
+    transform: translateX(0rem);
+  }
+}
+.hero__image-wrapper{
   position: relative;
   width: fit-content;
 }
-.img-wrapper::after{
+.hero__image-wrapper::after{
   content: "";
   position: absolute;
   inset: 0;
@@ -14,4 +58,33 @@
   height: 100%;
   border-radius: 100%;
   background: linear-gradient(to bottom,  transparent 85%, rgba(0, 0, 0, 0.3))
+}
+.hero__image-wrapper img{
+  border-radius: 100%;
+  width: clamp(25rem, 40vw, 45rem);
+}
+
+
+
+/*tablet-xl*/
+@media (min-width: 900px) {
+  .hero{
+    padding-inline: var(--tablet-xl-inline);
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .hero__figcaption{
+    max-width: 60rem;
+    text-align: start;
+  }
+  .hero__figcaption__navs{
+    flex-direction: row;
+  }
+}
+
+/*desktop*/
+@media (min-width: 1450px) {
+  .hero{
+    padding-inline: var(--desktop-inline);
+  }
 }

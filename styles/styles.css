@@ -8,5 +8,6 @@
 @import url(blocks/header.module.css);
 @import url(blocks/sidebar.module.css);
 @import url(blocks/hero.module.css);
+@import url(blocks/projects.module.css);
 /*Components*/
 @import url(components/buttons.module.css);

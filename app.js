@@ -2,7 +2,6 @@
 const languages = document.querySelector(".header__nav__languages")
 const language = document.querySelectorAll(".lang")
 // header selectors
-const logo = document.querySelector(".header__logo")
 const home = document.querySelector(".home")
 const about = document.querySelector(".about")
 const projects = document.querySelector(".projects")
@@ -31,7 +30,7 @@ const fetchData = fetch("data.json")
 // switch languages
 languages.onchange = (e) => {
   // header-data
-  const header = [logo, home, about, projects, cv, btn]
+  const header = [home, about, projects, cv, btn]
   header.forEach((selector) =>
     selector.textContent = data[`${e.target.value}`].header[selector.getAttribute("data-name")]
   )

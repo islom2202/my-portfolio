@@ -14,7 +14,12 @@
   background-color: var(--blue--secondary);
   border: 2px solid var(--blue--secondary);
 }
-
+.button--tertiary{
+  background-color: var(--blue--primary);
+  border-radius: 0;
+  border: none;
+  box-shadow: .5rem .5rem 0px 1px var(--blue--tertiary);
+}
 /*Hover effects*/
 .button--primary:hover{
   background-color: transparent;
@@ -23,6 +28,10 @@
 .button--secondary:hover{
    background-color: transparent;
   color: var(--blue--secondary);
+}
+.button--tertiary:hover{
+  background-color: var(--blue--tertiary);
+  box-shadow: .5rem .5rem 0px 1px var(--blue--primary);
 }
 /*Active effects*/
 .button:active{
