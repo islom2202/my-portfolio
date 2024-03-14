@@ -5,29 +5,33 @@
 .header{
   padding-inline: var(--mobile-inline); padding-block: 3rem; height: 8rem;
   display: flex; align-items: center; justify-content: space-between;
-  background-color: var(--gray-primary);
+  background-color: var(--gray--primary);
   position: sticky; inset: 0 auto auto 0; z-index: 99;
   animation: scroll-down forwards; animation-timeline: scroll();
   animation-range-start: 8rem; animation-range-end: 8rem;
 }
 @keyframes scroll-down {
   to{
-    border-bottom: .1rem dotted var(--gray-secondary);
+    border-bottom: .1rem dotted var(--gray--secondary);
   }
 }
 .header h1{
   color: var(--blue--secondary); letter-spacing: .1rem;
   display: flex; align-items: center; gap: 1rem;
 }
+
 .header__nav ul{
   display: none;
 }
 .header__nav ul li a{
-  display: flex; align-items: center; color: var(--gray-secondary);
+  display: flex; align-items: center; color: var(--gray--secondary)
 }
-.header__nav ul li:first-child a, .header__nav ul li:hover a {
- color: var(--black);
+.header__nav ul .active , .header__nav ul li:hover a {
+ color: var(--blue--tertiary);
+ text-decoration: underline .1rem dashed var(--blue--primary);
+ text-underline-offset: .5rem;
 }
+
 .header .burger{
   padding: .5rem; cursor: pointer; user-select: none;
   position: fixed; top: 2rem; right: 5%;
@@ -36,7 +40,7 @@
   border: 1px dotted black; color: var(--gray-secondary);
 }
 
-.header button{
+.header .button{
   display: none;
 }
 
@@ -48,7 +52,7 @@
   .header__nav ul{
     display: flex; align-items: center; gap: 3rem;
   }
-  .header button{
+  .header .button{
     display: block;
   }
   .header .burger{

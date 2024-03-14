@@ -14,17 +14,19 @@
   top: 8rem; /*headers height*/
   right: -100%;
   padding: 4rem;
-  background-color: var(--gray-primary);
+  background-color: var(--gray--primary);
   border-left: 1px dashed rgba(0, 0, 0, 0.2);
   z-index: 99;
 }
-.sidebar__nav ul li a{
+.sidebar__nav ul li a:not(.button), select{
   display: flex;
   align-items: center;
-  color: var(--gray);
+  color: var(--gray--secondary);
 }
-.sidebar__nav ul li:first-child a, .sidebar__nav ul li:hover a {
- color: var(--black);
+.sidebar__nav ul .active, .sidebar__nav ul li:hover a {
+ color: var(--blue--tertiary);
+ text-decoration: underline .1rem dashed var(--blue--primary);
+ text-underline-offset: .5rem;
 }
 
 

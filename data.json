@@ -1,6 +1,6 @@
 {
     "english": {
-      "header": {
+      "header-sidebar": {
         "home": "Home",
         "about": "About",
         "projects": "Projects",
@@ -9,7 +9,7 @@
       }
     },
     "russian": {
-      "header": {
+      "header-sidebar": {
         "home": "Главная",
         "about": "Обо мне",
         "projects": "Проекты",
@@ -18,7 +18,7 @@
       }
     },
     "tajik": {
-      "header": {
+      "header-sidebar": {
         "home": "Асосӣ",
         "about": "Дар бораи ман",
         "projects": "Лоиҳаҳо",

@@ -1,13 +1,15 @@
 /*Usuals*/
-@import url("usuals/boilerplates.module.css");
-@import url("usuals/breakpoints.module.css");
-@import url("usuals/colors.module.css");
-@import url("usuals/typography.module.css");
-
+@import url("usuals/boilerplates.css");
+@import url("usuals/breakpoints.css");
+@import url("usuals/colors.css");
+@import url("usuals/typography.css");
+@import url("usuals/vendors.css");
+@import url("usuals/scroll-padding-top.css");
 /*Blocks*/
-@import url("blocks/header.module.css");
-@import url("blocks/sidebar.module.css");
-@import url("blocks/hero.module.css");
-@import url("blocks/projects.module.css");
+@import url("blocks/header.css");
+@import url("blocks/sidebar.css");
+@import url("blocks/hero.css");
+@import url("blocks/projects.css");
 /*Components*/
-@import url("components/buttons.module.css");
+@import url("components/buttons.css");
+
