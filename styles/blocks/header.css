@@ -1,5 +1,5 @@
-@import url(../usuals/breakpoints.module.css);
-@import url(../usuals/colors.module.css);
+@import url(../usuals/breakpoints.css);
+@import url(../usuals/colors.css);
 
 /*mobile*/
 .header{
@@ -64,5 +64,11 @@
 @media (min-width: 1450px) {
   .header{
     padding-inline: var(--desktop-inline);
+  }
+}
+/*desktop-xl*/
+@media (min-width: 1800px) {
+  .header{
+     padding-inline: var(--desktop-xl-inline);
   }
 }

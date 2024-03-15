@@ -1,0 +1,92 @@
+@import url(../usuals/breakpoints.css);
+@import url(../usuals/colors.css);
+
+/*mobile*/
+.about-article{
+  padding: 5rem var(--mobile-inline);
+  margin-block: 5rem;
+  background-color: var(--blue--secondary);
+  color: var(--gray--primary);
+  display: grid;
+  justify-items: center;
+  gap: 3rem;
+}
+
+.about-article__imgWrapper{
+  min-height: 30rem;
+  height: 100%;
+  width: 100%;
+  max-width: 28rem;
+  background-image: url("../../assets/images/about-hero-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  animation: change-image forwards;
+  animation-timeline: view();
+  animation-range-start: cover 55%; /*of the viewport height, not element*/
+  animation-range-end: cover 57%; /*of the viewport height, not element*/
+}
+@keyframes change-image {
+  to{
+    background-image: url("../../assets/images/about-hero-2.jpg");
+  }
+}
+.about-article__figcaption{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.about-article__figcaption p{
+  line-height: 170%;
+}
+.about-article__figcaption mark{
+  background-color: transparent;
+  color: var(--aqua--primary);
+  font-weight: 600;
+}
+.about-article__figcaption__icons{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.about-article__figcaption img{
+  width: 4rem;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  user-select: none;
+}
+.about-article__figcaption img:hover{
+  filter: saturate(5.6);
+}
+.about-article__figcaption img:active{
+  opacity: .7;
+}
+/*tablet xl*/
+@media (min-width: 900px) {
+  .about-article{
+     padding: 7rem var(--tablet-xl-inline);
+     margin-block: 8rem;
+     margin-right: var(--tablet-xl-inline);
+     border-top-right-radius: 1rem;
+     border-bottom-right-radius: 1rem;
+     grid-template-columns: 28rem 1fr;
+     justify-items: start;
+  }
+}
+
+/*desktop*/
+@media (min-width: 1450px) {
+  .about-article{
+     padding: 10rem var(--desktop-inline);
+     margin-right: var(--desktop-inline);
+     margin-block: 10rem;
+  }
+}
+
+/*desktop-xl*/
+@media (min-width: 1800px) {
+  .about-article{
+     padding: 10rem var(--desktop-xl-inline);
+     margin-right: var(--desktop-xl-inline);
+  }
+}

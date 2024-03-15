@@ -1,139 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--Google material icons rounded-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"/>
-   <!--Google material icons outlined-filled-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" href="styles/styles.css">
-  <title>Islomjon Saidaliev</title>
-</head>
-<body>
-  <!--header-->
-  <header class="header">
-    <h1 class="header__logo" data-name="logo">
-       Islomjon Saidaliev
-       <span class="material-symbols-rounded">subtitles</span>
-    </h1>
-    <nav class="header__nav">
-      <h2 class="hidden">header navigation</h2>
-      <ul>
-        <li><a href="#home" class="home active" data-name="home"
-          >Home</a></li>
-        <li><a href="#projects" class="projects" data-name="projects">Projects</a></li>
-        <li><a href="#about" class="about" data-name="about">About</a></li>
-        <li>
-          <a href="#">
-            <span class="material-symbols-rounded">download</span>
-            <span class="cv" data-name="cv">CV</span>
-          </a>
-        </li>
-        <li>
-          <select class="nav__languages">
-            <option value="english" class="lang">En</option>
-            <option value="russian" class="lang">Ru</option>
-            <option value="tajik"  class="lang">Tj</option>
-          </select>
-        </li>
-      </ul>
-    </nav>
-    <a class="button button--secondary getInTouch" data-name="btn">Get in touch</a>
-    <span class="material-symbols-rounded burger" tabindex="0">menu</span>
-  </header>
-  <!--aside-->
-  <aside>
-    <h2 class="hidden">sidebar navigation</h2>
-    <div class="sidebar__nav">
-      <ul>
-        <li><a href="#home" class="home active" data-name="home">Home</a></li>
-        <li><a href="#projects" class="projects" data-name="projects">Projects</a></li>
-        <li><a href="#about" class="about" data-name="about">About</a></li>
-        <li>
-          <a href="#">
-            <span class="material-symbols-rounded">download</span>
-            <span class="cv" data-name="cv">CV</span>
-          </a>
-        </li>
-        <li>
-          <select class="nav__languages">
-            <option value="english" class="lang">En</option>
-            <option value="russian" class="lang">Ru</option>
-            <option value="tajik"  class="lang">Tj</option>
-          </select>
-        </li>
-        <li><a href="#" class="getInTouch" data-name="btn">Contact</a></li>
-      </ul>
-    </div>
-  </aside>
-  <main>
-    <!--hero-->
-    <figure class="hero" id="home">
-      <figcaption class="hero__figcaption">
-        <h2>Frontend developer creating unique websites</h2>
-        <p>Hi, I’m Islom, a frontend web developer from Dushanbe. I love working on creative projects that challenge myself.</p>
-        <nav class="hero__figcaption__navs">
-          <button class="button button--primary">Get in touch</button>
-          <a href="#projects">
-            <span>View my projects</span> 
-            <span class="material-symbols-rounded">double_arrow</span>
-          </a>
-        </nav>
-      </figcaption>
-      <img src="assets/images/hero.png" alt="hero" >
-    </figure>
-    <!--projects-->
-    <article class="projects-article" id="projects">
-      <h3 class="projects-article__heading">
-        <span>My Latest Projects</span>
-        <span class="material-symbols-rounded">grid_view</span>
-      </h3>
-      <section class="projects-article__list">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Google material icons rounded-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <!--Google material icons outlined-filled-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Islomjon Saidaliev</title>
+  </head>
+  <body>
+    <!--header-->
+    <header class="header">
+      <h1 class="header__logo" data-name="logo">
+        Islomjon Saidaliev
+        <span class="material-symbols-outlined">self_improvement</span>
+      </h1>
+      <nav class="header__nav">
+        <h2 class="hidden">header navigation</h2>
+        <ul>
+          <li><a href="#home" class="home active" data-name="home">Home</a></li>
+          <li>
+            <a href="#projects" class="projects" data-name="projects"
+              >Projects</a
+            >
+          </li>
+          <li><a href="#about" class="about" data-name="about">About</a></li>
+          <li>
+            <a href="#">
+              <span class="material-symbols-rounded">download</span>
+              <span class="cv" data-name="cv">CV</span>
+            </a>
+          </li>
+          <li>
+            <select class="nav__languages">
+              <option value="english" class="lang">En</option>
+              <option value="russian" class="lang">Ru</option>
+              <option value="tajik" class="lang">Tj</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+      <a class="button button--secondary getInTouch" data-name="btn"
+        >Get in touch</a
+      >
+      <span class="material-symbols-rounded burger" tabindex="0">menu</span>
+    </header>
+    <!--aside-->
+    <aside>
+      <h2 class="hidden">sidebar navigation</h2>
+      <div class="sidebar__nav">
+        <ul>
+          <li><a href="#home" class="home active" data-name="home">Home</a></li>
+          <li>
+            <a href="#projects" class="projects" data-name="projects"
+              >Projects</a
+            >
+          </li>
+          <li><a href="#about" class="about" data-name="about">About</a></li>
+          <li>
+            <a href="#">
+              <span class="material-symbols-rounded">download</span>
+              <span class="cv" data-name="cv">CV</span>
+            </a>
+          </li>
+          <li>
+            <select class="nav__languages">
+              <option value="english" class="lang">En</option>
+              <option value="russian" class="lang">Ru</option>
+              <option value="tajik" class="lang">Tj</option>
+            </select>
+          </li>
+          <li><a href="#" class="getInTouch" data-name="btn">Contact</a></li>
+        </ul>
+      </div>
+    </aside>
+    <main>
+      <!--hero-->
+      <figure class="hero" id="home">
+        <figcaption class="hero__figcaption">
+          <h2>Frontend developer creating unique websites</h2>
+          <p>
+            Hi, I’m Islom, a frontend web developer from Dushanbe. I love
+            working on creative projects that challenge myself.
+          </p>
+          <nav class="hero__figcaption__navs">
+            <button class="button button--primary">Get in touch</button>
+            <a href="#projects">
+              <span>View my projects</span>
+              <span class="material-symbols-rounded">double_arrow</span>
+            </a>
+          </nav>
+        </figcaption>
+        <img src="assets/images/hero-warm.png" alt="hero" />
+      </figure>
+      <!--projects-->
+      <article class="projects-article" id="projects">
+        <h3 class="projects-article__heading">
+          <span>My Latest Projects</span>
+          <span class="material-symbols-rounded">grid_view</span>
+        </h3>
+        <section class="projects-article__list">
           <figure class="projects-article__list__item">
-            <img src="assets/images/softclub.png" alt="softclub">
+            <img src="assets/images/softclub.png" alt="softclub" />
             <figcaption>
               <mark>Frontend Part clone</mark>
               <h4>SoftClub - programming center</h4>
-              <p>Softclub provides high-quality bootcamps and the best instructors to teach you programming</p>
-              <a class="button button--tertiary" href="https://softclub.vercel.app/" target="_blank">View Project</a>
+              <p>
+                Softclub provides high-quality bootcamps and the best
+                instructors to teach you programming
+              </p>
+              <a
+                class="button button--tertiary"
+                href="https://softclub.vercel.app/"
+                target="_blank"
+                >View Project</a
+              >
             </figcaption>
           </figure>
           <figure class="projects-article__list__item">
-            <img src="assets/images/designer-portfolio.jpg" alt="designer-portfolio">
+            <img
+              src="assets/images/designer-portfolio.jpg"
+              alt="designer-portfolio"
+            />
             <figcaption>
               <mark>Frontend Mentor Challenge</mark>
               <h4>Single-page design portfolio</h4>
-              <p>Immerse yourself in a seamless, visually striking single-page design portfolio showcasing exquisite artworks and creativity.</p>
-              <a class="button button--tertiary" href="https://islom2202.github.io/single-page-design-portfolio/" target="_blank">View Project</a>
+              <p>
+                Immerse yourself in a seamless, visually striking single-page
+                design portfolio showcasing exquisite artworks and creativity.
+              </p>
+              <a
+                class="button button--tertiary"
+                href="https://islom2202.github.io/single-page-design-portfolio/"
+                target="_blank"
+                >View Project</a
+              >
             </figcaption>
           </figure>
           <figure class="projects-article__list__item">
-            <img src="assets/images/art-gallery-website.png" alt="art-gallery-website">
+            <img
+              src="assets/images/art-gallery-website.png"
+              alt="art-gallery-website"
+            />
             <figcaption>
               <mark>Frontend Mentor Challenge</mark>
               <h4>MODERN ART GALLERY</h4>
-              <p>Explore a virtual art gallery showcasing captivating masterpieces from diverse artists worldwide in stunning exhibitions.</p>
-              <a class="button button--tertiary" href="https://islom2202.github.io/Art-gallery-website/" target="_blank">View Project</a>
+              <p>
+                Explore a virtual art gallery showcasing captivating
+                masterpieces from diverse artists worldwide in stunning
+                exhibitions.
+              </p>
+              <a
+                class="button button--tertiary"
+                href="https://islom2202.github.io/Art-gallery-website/"
+                target="_blank"
+                >View Project</a
+              >
             </figcaption>
           </figure>
           <figure class="projects-article__list__item">
-            <img src="assets/images/developer-portfolio-1.jpg" alt="developer-portfolio">
+            <img
+              src="assets/images/developer-portfolio-1.jpg"
+              alt="developer-portfolio"
+            />
             <figcaption>
               <mark>Frontend Mentor Challenge</mark>
               <h4>Single-page developer portfolio</h4>
-              <p>Experience a sleek single-page developer portfolio showcasing coding expertise and innovative projects with finesse.</p>
-              <a class="button button--tertiary" href="https://islom2202.github.io/single-page-developer-portfolio/" target="_blank">View Project</a>
+              <p>
+                Experience a sleek single-page developer portfolio showcasing
+                coding expertise and innovative projects with finesse.
+              </p>
+              <a
+                class="button button--tertiary"
+                href="https://islom2202.github.io/single-page-developer-portfolio/"
+                target="_blank"
+                >View Project</a
+              >
             </figcaption>
           </figure>
-      </section>
-    </article>
-    <!--about-->
-    <article class="about-article" id="about">
-      <h2>About</h2>
-    </article>
-  </main>
-  <footer></footer>
-  <script type="module" src="js/main.js"></script>
-</body>
+        </section>
+      </article>
+      <!--about-->
+      <figure class="about-article" id="about">
+        <div class="about-article__imgWrapper"><!--img is set in css--></div>
+        <figcaption class="about-article__figcaption">
+          <h3>
+            My background
+            <span class="material-symbols-rounded">subtitles</span>
+          </h3>
+          <p>
+            A <mark>frontend developer</mark> from Dushanbe, I have been learning programming for two months at Ilmhona, where I achieved high scores. Following that, I continued my programming journey for six months at Softclub, a programming center that has been gaining popularity over the last two years. Alongside attending bootcamps, I have been building interactive projects.
+          </p>
+          <p>For now I have no commercial experience</p>
+          <div class="about-article__figcaption__icons">
+            <a href="https://github.com/islom2202" target="_blank">
+              <img draggable="false" src="assets/icons/github.png" alt="github">
+            </a>
+            <a href="https://www.instagram.com/islom_ihsan/"  target="_blank">
+              <img draggable="false" src="assets/icons/instagram.png" alt="instagram">
+            </a>
+            <a href="https://t.me/islom22022001" target="_blank">
+              <img draggable="false" src="assets/icons/telegram.png" alt="telegram">
+            </a>
+          </div>
+        </figcaption>
+      </figure>
+      <div class="about-stack">
+           <h3>My <mark>web</mark>-stack</h3>
+            <ul class="about-stack__list">
+              <li><img src="assets/icons/html.svg" alt="html"></li>
+              <li><img src="assets/icons/javascript.svg" alt="javascript"></li>
+              <li><img src="assets/icons/sass.svg" alt="sass"></li>
+              <li><img src="assets/icons/tailwind.svg" alt="tailwind"></li>
+              <li><img src="assets/icons/typescript.png" alt="typescript"></li>
+              <li><img src="assets/icons/react.png" alt="react"></li>
+            </ul>
+      </div>
+    </main>
+    <footer></footer>
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>

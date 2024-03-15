@@ -10,6 +10,6 @@
 @import url("blocks/sidebar.css");
 @import url("blocks/hero.css");
 @import url("blocks/projects.css");
+@import url("blocks/about.css");
 /*Components*/
 @import url("components/buttons.css");
-

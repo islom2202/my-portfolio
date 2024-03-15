@@ -1,17 +1,19 @@
-@import url(../usuals/breakpoints.module.css);
-@import url(../usuals/colors.module.css);
+@import url(../usuals/breakpoints.css);
+@import url(../usuals/colors.css);
 
 /*mobile*/
 .projects-article{
   padding-inline: var(--mobile-inline);
   padding-bottom: 10rem;
-  margin-block: 5rem;
   background-color: var(--projects-bg--primary);
 }
 .projects-article__heading{
   padding-block: 6rem;
   color: var(--blue--tertiary);
   text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 .projects-article__list{
   display: flex;
@@ -79,5 +81,11 @@
 @media (min-width: 1450px) {
   .projects-article{
     padding-inline: var(--desktop-inline);
+  }
+}
+/*desktop-xl*/
+@media (min-width: 1800px) {
+  .projects-article{
+     padding-inline: var(--desktop-xl-inline);
   }
 }

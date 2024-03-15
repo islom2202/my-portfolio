@@ -1,8 +1,9 @@
-@import url(../usuals/breakpoints.module.css);
-@import url(../usuals/colors.module.css);
+@import url(../usuals/breakpoints.css);
+@import url(../usuals/colors.css);
 /*mobile*/
 .hero{
   padding-inline: var(--mobile-inline);
+  padding-block: 2rem 5rem;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -47,11 +48,15 @@
   }
 }
 
-
 .hero img{
   border-radius: 100%;
   width: clamp(25rem, 40vw, 45rem);
-  filter:brightness(1.2);
+  background-image: linear-gradient(to top, 
+  var(--blue--secondary),
+  var(--blue--primary), 
+  var(--blue--primary)
+  )
+  
 }
 
 
@@ -76,5 +81,12 @@
 @media (min-width: 1450px) {
   .hero{
     padding-inline: var(--desktop-inline);
+  }
+}
+
+/*desktop-xl*/
+@media (min-width: 1800px) {
+  .hero{
+     padding-inline: var(--desktop-xl-inline);
   }
 }
