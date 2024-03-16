@@ -5,7 +5,7 @@
 .contact{
   display: grid;
   gap: 5rem;
-  padding-block: 10rem;
+  padding-block: 5rem;
   margin-top: 5rem;
   padding-inline: var(--mobile-inline);
   background-color: var(--blue--tertiary);
@@ -49,13 +49,12 @@ input, textarea{
 .contact__list__item{
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 1rem;
 }
 .contact__list__item img{
-  width: 8rem;
+  width: 7rem;
   aspect-ratio: 1/1;
-  padding: 2rem;
-  border: 1px solid;
+  padding: 1.5rem;
 }
 .contact__list__item:nth-child(1) img{
   background-color: var(--icon--phone);
@@ -81,10 +80,18 @@ input, textarea{
     align-items: center;
     padding-inline: var(--tablet-xl-inline);
     gap: 15rem;
+    padding-block: 10rem;
   }
   .contact__form__inputs{
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+  }
+  .contact__list__item{
+    gap: 3rem;
+  }
+  .contact__list__item img{
+    width: 8rem;
+    padding: 2rem;
   }
 }
 
