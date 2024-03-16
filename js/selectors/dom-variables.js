@@ -14,6 +14,10 @@ const home_section = document.querySelector("#home")
 const projects_section = document.querySelector("#projects")
 const about_section = document.querySelector("#about")
 export {home_section, projects_section, about_section}
-// form
-export const form = document.querySelector("form")
+// hero
+const hero_name = document.querySelector(".hero__figcaption h2")
+const hero_description = document.querySelector(".hero__figcaption p")
+const hero_btn = document.querySelector(".hero__figcaption__navs .button")
+const hero_btn_view_projects = document.querySelector(".hero__figcaption__navs a span")
+export {hero_name, hero_description, hero_btn, hero_btn_view_projects}
 

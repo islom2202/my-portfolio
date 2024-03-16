@@ -12,7 +12,10 @@ import {
   home_section,
   projects_section,
   about_section,
-  form
+  hero_name,
+  hero_description,
+  hero_btn,
+  hero_btn_view_projects,
 } from "./selectors/dom-variables.js"
 
 // functions
@@ -25,7 +28,10 @@ burger.onclick = () => handleSidebar(burger, sidebar)
 
 // handle-language -- two select tags one from header another from sidebar
 select_languages.forEach((select) => {
-  select.onchange = (e) => handleLang(e, home, about, projects, cv, btn)
+  select.onchange = (e) => handleLang(
+    e, home, about, projects, cv, btn, // header
+    hero_name, hero_description, hero_btn, hero_btn_view_projects // hero
+  )
 })
 
 // get header's height and make a css native variable for css scroll-padding-top
@@ -36,9 +42,3 @@ document.documentElement.style.setProperty(
 
 // hanlde active link
 window.onscroll = () => handleActiveLink(home_section, projects_section, about_section, header_height)
-
-// handle form submission
-form.onsubmit = (e) => {
-  e.preventDefault()
-  const emailPattern = /^\w+@\w+.[\w+]{2,3}$/i
-}

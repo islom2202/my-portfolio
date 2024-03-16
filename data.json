@@ -6,6 +6,12 @@
         "projects": "Projects",
         "cv": "CV",
         "btn": "Get in touch"
+      },
+      "hero": {
+        "hero-name": "Frontend developer creating unique websites",
+        "hero-description": "Hi, I’m Islom, a frontend web developer. I love learning new technologies and working on creative projects that push my boundaries and skills to new heights..",
+        "hero-btn": "Get in touch",
+        "hero-view": "View my projects"
       }
     },
     "russian": {
@@ -15,6 +21,12 @@
         "projects": "Проекты",
         "cv": "Резюме",
         "btn": "Связаться"
+      },
+      "hero": {
+        "hero-name": "Frontend-разработчик, создающий уникальные сайты",
+        "hero-description": "Привет, я Ислом, Frontend веб-разработчик. Мне нравится изучать новые технологии и работать над креативными проектами, которые расширяют мои границы и навыки на новую высоту.",
+        "hero-btn": "Связаться",
+        "hero-view": "Посмотреть мои проекты"
       }
     },
     "tajik": {

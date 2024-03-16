@@ -31,8 +31,8 @@
   color: var(--blue--primary);
 }
 .hero__figcaption__navs a span:nth-child(2), .hero__figcaption__navs a img{
-  height: 2rem;
- animation: bounce-to-right 1.5s linear infinite;
+  height: 1.6rem;
+  animation: bounce-to-right 1.5s linear infinite;
 }
 @keyframes bounce-to-right {
   30%{
