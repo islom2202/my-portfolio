@@ -12,6 +12,7 @@ import {
   home_section,
   projects_section,
   about_section,
+  form
 } from "./selectors/dom-variables.js"
 
 // functions
@@ -35,3 +36,9 @@ document.documentElement.style.setProperty(
 
 // hanlde active link
 window.onscroll = () => handleActiveLink(home_section, projects_section, about_section, header_height)
+
+// handle form submission
+form.onsubmit = (e) => {
+  e.preventDefault()
+  const emailPattern = /^\w+@\w+.[\w+]{2,3}$/i
+}

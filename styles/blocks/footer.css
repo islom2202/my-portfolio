@@ -1,0 +1,38 @@
+@import url("../usuals/breakpoints.css");
+@import url("../usuals/colors.css");
+
+/*mobile*/
+footer{
+  background-color: var(--blue--tertiary);
+  color: var(--gray--primary);
+  padding-inline: var(--mobile-inline);
+  padding-block: 2rem;
+  border-top: .1rem dotted var(--gray--secondary);
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+footer p{
+  opacity: .5;
+}
+/*tablet xl*/
+@media (min-width: 900px) {
+  footer{
+    padding-inline: var(--tablet-xl-inline);
+  }
+}
+
+/*desktop*/
+@media (min-width: 1450px) {
+  footer{
+    padding-inline: var(--desktop-inline);
+  }
+}
+/*desktop-xl*/
+@media (min-width: 1800px) {
+  footer{
+     padding-inline: var(--desktop-xl-inline);
+  }
+}

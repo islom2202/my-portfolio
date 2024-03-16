@@ -1,0 +1,60 @@
+@import url("../usuals/breakpoints.css");
+@import url("../usuals/colors.css");
+
+/*mobile*/
+.about-stack{
+  padding-inline: var(--mobile-inline);
+  padding-bottom: 5rem;
+}
+.about-stack__heading{
+  padding-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.about-stack__heading mark, .about-stack__heading span:last-child{
+  background-color: transparent;
+  color: var(--blue--primary);
+}
+.about-stack__heading span:last-child{
+  scale: 1.3;
+}
+.about-stack__list{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+.about-stack__list li:hover{
+  filter: drop-shadow(7px 7px);
+}
+.about-stack__list img{
+  width: 100%;
+}
+/*tablet xl*/
+@media (min-width: 900px) {
+  .about-stack{
+     padding-inline: var(--tablet-xl-inline);
+  }
+  .about-stack__list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+}
+
+/*desktop*/
+@media (min-width: 1450px) {
+  .about-stack{
+     padding-inline: var(--desktop-inline);
+  }
+  .about-stack__list{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/*desktop-xl*/
+@media (min-width: 1800px) {
+  .about-stack{
+     padding-inline: var(--desktop-xl-inline);
+  }
+}

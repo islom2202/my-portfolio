@@ -36,9 +36,7 @@
   flex-direction: column;
   gap: 2rem;
 }
-.about-article__figcaption p{
-  line-height: 170%;
-}
+
 .about-article__figcaption mark{
   background-color: transparent;
   color: var(--aqua--primary);

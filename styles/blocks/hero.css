@@ -30,7 +30,8 @@
   gap: .5rem;
   color: var(--blue--primary);
 }
-.hero__figcaption__navs a span:nth-child(2){
+.hero__figcaption__navs a span:nth-child(2), .hero__figcaption__navs a img{
+  height: 2rem;
  animation: bounce-to-right 1.5s linear infinite;
 }
 @keyframes bounce-to-right {
@@ -48,7 +49,7 @@
   }
 }
 
-.hero img{
+.hero__img{
   border-radius: 100%;
   width: clamp(25rem, 40vw, 45rem);
   background-image: linear-gradient(to top, 

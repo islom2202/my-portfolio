@@ -14,3 +14,6 @@ const home_section = document.querySelector("#home")
 const projects_section = document.querySelector("#projects")
 const about_section = document.querySelector("#about")
 export {home_section, projects_section, about_section}
+// form
+export const form = document.querySelector("form")
+

@@ -21,7 +21,7 @@
     <header class="header">
       <h1 class="header__logo" data-name="logo">
         Islomjon Saidaliev
-        <span class="material-symbols-outlined">self_improvement</span>
+        <img src="assets/icons/meditate.png" alt="meditate" draggable="false">
       </h1>
       <nav class="header__nav">
         <h2 class="hidden">header navigation</h2>
@@ -35,7 +35,7 @@
           <li><a href="#about" class="about" data-name="about">About</a></li>
           <li>
             <a href="#">
-              <span class="material-symbols-rounded">download</span>
+              <img src="assets/icons/download.png" alt="download" draggable="false">
               <span class="cv" data-name="cv">CV</span>
             </a>
           </li>
@@ -48,7 +48,7 @@
           </li>
         </ul>
       </nav>
-      <a class="button button--secondary getInTouch" data-name="btn">Get in touch</a>
+      <a class="button button--secondary getInTouch" data-name="btn" href="#contact">Get in touch</a>
       <span class="material-symbols-rounded burger" tabindex="0">menu</span>
     </header>
     <!--aside-->
@@ -65,7 +65,7 @@
           <li><a href="#about" class="about" data-name="about">About</a></li>
           <li>
             <a href="#">
-              <span class="material-symbols-rounded">download</span>
+              <img src="assets/icons/download.png" alt="download" draggable="false">
               <span class="cv" data-name="cv">CV</span>
             </a>
           </li>
@@ -76,7 +76,7 @@
               <option value="tajik" class="lang">Tj</option>
             </select>
           </li>
-          <li><a href="#" class="getInTouch" data-name="btn">Contact</a></li>
+          <li><a href="#contact" class="getInTouch"   data-name="btn">Contact</a></li>
         </ul>
       </div>
     </aside>
@@ -86,18 +86,17 @@
         <figcaption class="hero__figcaption">
           <h2>Frontend developer creating unique websites</h2>
           <p>
-            Hi, I’m Islom, a frontend web developer from Dushanbe. I love
-            working on creative projects that challenge myself.
+            Hi, I’m Islom, a frontend web developer. I love learning new technologies and working on creative projects that push my boundaries and skills to new heights..
           </p>
           <nav class="hero__figcaption__navs">
             <button class="button button--primary">Get in touch</button>
             <a href="#projects">
               <span>View my projects</span>
-              <span class="material-symbols-rounded">double_arrow</span>
+              <img src="assets/icons/chevron-right.png" alt="to-right" draggable="false">
             </a>
           </nav>
         </figcaption>
-        <img src="assets/images/hero-warm.png" alt="hero" />
+        <img src="assets/images/hero-warm.png" alt="hero" class="hero__img"/>
       </figure>
       <!--projects-->
       <article class="projects-article" id="projects">
@@ -197,7 +196,7 @@
           <p>
             A <mark>frontend developer</mark> from Dushanbe, I have been learning programming for two months at Ilmhona, where I achieved high scores. Following that, I continued my programming journey for six months at Softclub, a programming center that has been gaining popularity over the last two years. Alongside attending bootcamps, I have been building interactive projects.
           </p>
-          <p>For now I have no commercial experience</p>
+          <p>For now I have no commercial experience.</p>
           <div class="about-article__figcaption__icons">
             <a href="https://github.com/islom2202" target="_blank">
               <img draggable="false" src="assets/icons/github.png" alt="github">
@@ -212,18 +211,73 @@
         </figcaption>
       </figure>
       <div class="about-stack">
-           <h3>My <mark>web</mark>-stack</h3>
-            <ul class="about-stack__list">
-              <li><img src="assets/icons/html.svg" alt="html"></li>
-              <li><img src="assets/icons/javascript.svg" alt="javascript"></li>
-              <li><img src="assets/icons/sass.svg" alt="sass"></li>
-              <li><img src="assets/icons/tailwind.svg" alt="tailwind"></li>
-              <li><img src="assets/icons/typescript.png" alt="typescript"></li>
-              <li><img src="assets/icons/react.png" alt="react"></li>
-            </ul>
+        <h3 class="about-stack__heading">
+          <span>My <mark>web</mark>-stack</span>
+          <span class="material-symbols-outlined">web</span> 
+        </h3>
+          <ul class="about-stack__list">
+            <li><img src="assets/icons/html.svg" alt="html"></li>
+            <li><img src="assets/icons/javascript.svg" alt="javascript"></li>
+            <li><img src="assets/icons/sass.svg" alt="sass"></li>
+            <li><img src="assets/icons/tailwind.svg" alt="tailwind"></li>
+            <li><img src="assets/icons/typescript.png" alt="typescript"></li>
+            <li><img src="assets/icons/react.svg" alt="react"></li>
+          </ul> 
       </div>
+      <!--contact-->
+      <article class="contact" id="contact">
+        <form class="contact__form">
+          <h4>Get in touch</h4>
+          <p>Any questions? I am very reafy to hear from you</p>
+          <div class="contact__form__inputs">
+            <div>
+              <label for="name">First name</label>
+              <input id="name" placeholder="Name *" required>
+            </div>
+            <div>
+              <label for="email">Your Email</label>
+              <input type="email" placeholder="Email *" required>
+            </div>
+          </div>
+          <div class="contact__form__subject">
+            <label for="subject">Subject</label>
+            <input id="subject" placeholder="Subject *" required>
+          </div>
+          <div class="contact__form__message">
+            <label for="message">Your message</label>
+            <textarea id="message" rows="4" placeholder="Your message *" required></textarea>
+          </div>
+          <button type="submit" class="button button--tertiary">SEND MESSAGE</button>
+        </form>
+        <ul class="contact__list">
+          <li class="contact__list__item">
+            <img src="assets/icons/phone.png" alt="phone" draggable="false">
+            <div class="contact__list__item__content">
+              <p>PHONE</p>
+              <p>+992 989 155 768</p>
+            </div>
+          </li>
+          <li class="contact__list__item">
+            <img src="assets/icons/email.png" alt="email" draggable="false">
+            <div class="contact__list__item__content">
+              <p>MAIL</p>
+              <p>islomihsan@gmail.com</p>
+            </div>
+          </li>
+          <li class="contact__list__item">
+            <img src="assets/icons/address.png" alt="address">
+            <div class="contact__list__item__content">
+              <p>My Location</p>
+              <p>Dushanbe, Tajikistan</p>
+            </div>
+          </li>
+        </ul>
+      </article>  
     </main>
-    <footer></footer>
+    <footer>
+      <p>Islomjon Saidaliev</p>
+      <p>&copy; 2024 copyright all right reserved</p>
+    </footer>
     <script type="module" src="js/main.js"></script>
   </body>
 </html>

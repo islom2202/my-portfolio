@@ -19,14 +19,25 @@
   color: var(--blue--secondary); letter-spacing: .1rem;
   display: flex; align-items: center; gap: 1rem;
 }
-
+.header h1 img, .header__nav ul li a img{
+  width: clamp(2rem, 2vw, 2.5rem);
+}
 .header__nav ul{
   display: none;
 }
 .header__nav ul li a{
   display: flex; align-items: center; color: var(--gray--secondary)
 }
-.header__nav ul .active , .header__nav ul li:hover a {
+.header__nav ul li a:has(img){
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+.header__nav ul .active, 
+.header__nav ul li:nth-child(1):hover a,
+.header__nav ul li:nth-child(2):hover a,
+.header__nav ul li:nth-child(3):hover a{
  color: var(--blue--tertiary);
  text-decoration: underline .1rem dashed var(--blue--primary);
  text-underline-offset: .5rem;

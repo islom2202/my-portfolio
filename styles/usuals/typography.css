@@ -15,10 +15,8 @@ h4{
 h5{
   font-size: 1.8rem;
 }
-p{
-  font-size: clamp(1.5rem, 2vw, 1.8rem);
-}
-a, button,select,option{
+
+p, input, textarea, label, a, button, select, option{
   font-size: clamp(1.6rem, 1.5vw, 1.8rem);
 }
 span, mark{
