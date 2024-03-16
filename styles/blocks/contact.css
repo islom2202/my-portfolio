@@ -49,7 +49,7 @@ input, textarea{
 .contact__list__item{
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 3rem;
 }
 .contact__list__item img{
   width: 7rem;
@@ -85,9 +85,6 @@ input, textarea{
   .contact__form__inputs{
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-  }
-  .contact__list__item{
-    gap: 3rem;
   }
   .contact__list__item img{
     width: 8rem;
