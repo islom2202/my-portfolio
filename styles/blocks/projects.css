@@ -25,7 +25,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 5rem;
-  max-width: 50rem;
+  width: clamp(20rem, 100%, 50rem);
 }
 .projects-article__list__item figcaption{
   opacity: 0;
@@ -35,15 +35,14 @@
   animation-range-end: cover 50%;
 }
 .projects-article__list__item img{
-  transform: translate(-5rem);
+  transform: translate(calc(-1 * var(--mobile-inline)));
   animation: fly-in-right forwards;
   animation-timeline: view();
   animation-range-start: cover 0%;
   animation-range-end: cover 50%;
-
 }
 .projects-article__list__item:nth-child(even) img{
-  transform: translate(5rem);
+  transform: translate(var(--mobile-inline));
 }
 @keyframes appear {
   to{
@@ -95,7 +94,7 @@
   }
   .projects-article__list__item{
     grid-template-columns: 1fr 1fr;
-    max-width: 100%;
+    width: clamp(20rem, 100%, 100%);
     align-items: center;
     gap: 10%;
   }
