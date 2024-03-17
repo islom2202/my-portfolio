@@ -1,10 +1,4 @@
-/*Usuals*/
-@import url("usuals/boilerplates.css");
-@import url("usuals/breakpoints.css");
-@import url("usuals/colors.css");
-@import url("usuals/typography.css");
-@import url("usuals/vendors.css");
-@import url("usuals/scroll-padding-top.css");
+
 /*Blocks*/
 @import url("blocks/header.css");
 @import url("blocks/sidebar.css");
@@ -16,3 +10,10 @@
 @import url("blocks/footer.css");
 /*Components*/
 @import url("components/buttons.css");
+/*Usuals*/
+@import url("usuals/boilerplates.css");
+@import url("usuals/breakpoints.css");
+@import url("usuals/colors.css");
+@import url("usuals/typography.css");
+@import url("usuals/vendors.css");
+@import url("usuals/scroll-padding-top.css");
