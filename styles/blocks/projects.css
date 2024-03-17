@@ -6,7 +6,6 @@
   padding-inline: var(--mobile-inline);
   padding-bottom: 10rem;
   background-color: var(--projects-bg--primary);
-  max-width: 100%;
 }
 .projects-article__heading{
   padding-block: 6rem;
