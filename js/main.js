@@ -15,14 +15,19 @@ import { handleLang } from "./functions/language.js"
 import { handleActiveLink } from "./functions/activeLink.js"
 import { hadnle_cv_path } from "./functions/cv_lang_path.js"
 
-// default functions 
-window.addEventListener("load", function(){
+// default functions (first work fine on computer , but not mobile)
+window.onload = () => {
+  const loc_lang = localStorage.getItem("lang") || "english"
+  select_languages.forEach((select) => (select.value = loc_lang))
+  hadnle_cv_path(loc_lang)
+  handleLang(loc_lang)
+}
+document.addEventListener("DOMContentLoaded", () => {
   const loc_lang = localStorage.getItem("lang") || "english"
   select_languages.forEach((select) => (select.value = loc_lang))
   hadnle_cv_path(loc_lang)
   handleLang(loc_lang)
 })
-
 // handle-sidebar
 burger.onclick = () => handleSidebar(burger, sidebar)
 
