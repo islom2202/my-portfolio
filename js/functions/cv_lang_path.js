@@ -7,7 +7,7 @@ export const hadnle_cv_path = (lang) => {
       tag.setAttribute("href", "CVs/cv.pdf")
       tag.setAttribute("download", "CV")
     } else {
-      tag.setAttribute("href", "CVs/cv.pdf")
+      tag.setAttribute("href", "CVs/резюме.pdf")
       tag.setAttribute("download", "Резюме")
     }
   })
