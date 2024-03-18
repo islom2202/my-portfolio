@@ -33,7 +33,10 @@
   align-items: center;
   gap: .4rem;
 }
-
+.header__nav ul li:hover a{
+   color: var(--blue--tertiary);
+   filter: brightness(0);
+}
 .header__nav ul .active, 
 .header__nav ul li:nth-child(1):hover a,
 .header__nav ul li:nth-child(2):hover a,
