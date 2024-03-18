@@ -16,13 +16,18 @@ import { handleActiveLink } from "./functions/activeLink.js"
 import { hadnle_cv_path } from "./functions/cv_lang_path.js"
 
 // default functions 
-window.onload = () =>{
-  const loc_lang = localStorage.getItem("lang") || "english";
-  select_languages.forEach((select) => select.value = loc_lang)
+// window.onload = () =>{
+//   const loc_lang = localStorage.getItem("lang") || "english";
+//   select_languages.forEach((select) => select.value = loc_lang)
+//   hadnle_cv_path(loc_lang)
+//   handleLang(loc_lang)
+// } // this one is not working on my phone
+window.addEventListener("load", function(){
+  const loc_lang = localStorage.getItem("lang") || "english"
+  select_languages.forEach((select) => (select.value = loc_lang))
   hadnle_cv_path(loc_lang)
   handleLang(loc_lang)
-} 
-
+})
 // handle-sidebar
 burger.onclick = () => handleSidebar(burger, sidebar)
 
