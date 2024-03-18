@@ -22,6 +22,7 @@ window.addEventListener("load", function(){
   hadnle_cv_path(loc_lang)
   handleLang(loc_lang)
 })
+
 // handle-sidebar
 burger.onclick = () => handleSidebar(burger, sidebar)
 
