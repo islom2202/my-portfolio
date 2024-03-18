@@ -12,6 +12,74 @@
         "hero-description": "Hi, I’m Islom, a frontend web developer. I love learning new technologies and working on creative projects that push my boundaries and skills to new heights..",
         "hero-btn": "Get in touch",
         "hero-view": "View my projects"
+      },
+      "projects": {
+        "projects-heading": "My Latest Projects",
+        "projects-list": [
+          {
+            "project-label": "Frontend Part clone",
+            "project-name": "SOFTCLUB - PROGRAMMING CENTER",
+            "project-description": "Softclub provides high-quality bootcamps and the best instructors to teach you programming",
+            "project-button": "View Project"
+          },
+          {
+            "project-label": "Frontend Mentor Challenge",
+            "project-name": "SINGLE-PAGE DESIGN PORTFOLIO",
+            "project-description": "Immerse yourself in a seamless, visually striking single-page design portfolio showcasing exquisite artworks and creativity.",
+            "project-button": "View Project"
+          },
+          {
+            "project-label": "Frontend Mentor Challenge",
+            "project-name": "MODERN ART GALLERY",
+            "project-description": "Explore a virtual art gallery showcasing captivating masterpieces from diverse artists worldwide in stunning exhibitions.",
+            "project-button": "View Project"
+          },
+          {
+            "project-label": "Frontend Mentor Challenge",
+            "project-name": "SINGLE-PAGE DEVELOPER PORTFOLIO",
+            "project-description": "Experience a sleek single-page developer portfolio showcasing coding expertise and innovative projects with finesse.",
+            "project-button": "View Project"
+          }
+        ]
+      },
+      "about": {
+        "about-heading": "My background",
+        "about-description1": {
+          "span1": "A",
+          "mark": "frontend developer",
+          "span2": "from Dushanbe, I have been learning programming for two months at Ilmhona, where I achieved high scores. Following that, I continued my programming journey for six months at Softclub, a programming center that has been gaining popularity over the last two years. Alongside attending bootcamps, I have been building interactive projects."
+        },
+        "about-description2": "For now I have no commercial experience.",
+        "about-stack_heading": "My web-stack"
+      },
+      "contact": {
+        "contact-form": {
+          "form-heading": "Get in touch",
+          "form-description": "Any questions? I am very ready to hear from you",
+          "label-name": "First name",
+          "placeholder-name": "Name *",
+          "label-email": "Your Email",
+          "placeholder-email": "Email *",
+          "label-subject": "Subject",
+          "placeholder-subject": "Subject *",
+          "label-message": "Message",
+          "placeholder-message": "Message *",
+          "form-btn": "Send Message"
+        },
+        "contact-list": [
+          {
+            "item-heading": "PHONE",
+            "item-body": "+992 989 155 768"
+          },
+          {
+            "item-heading": "EMAIL",
+            "item-body": "islomihsan@gmail.com"
+          },
+          {
+            "item-heading": "LOCATION",
+            "item-body": "Dushanbe, Tajikistan"
+          }
+        ]
       }
     },
     "russian": {
@@ -27,6 +95,74 @@
         "hero-description": "Привет, я Ислом, Frontend веб-разработчик. Мне нравится изучать новые технологии и работать над креативными проектами, которые расширяют мои границы и навыки на новую высоту.",
         "hero-btn": "Связаться",
         "hero-view": "Посмотреть мои проекты"
+      },
+      "projects": {
+        "projects-heading": "Мои последние проекты",
+        "projects-list": [
+          {
+            "project-label": "Клон фронтендской части",
+            "project-name": "SOFTCLUB - ЦЕНТР ПРОГРАММИРОВАНИЯ",
+            "project-description": "Softclub предоставляет качественные курсы и лучших инструкторов для обучения программированию",
+            "project-button": "Посмотреть проект"
+          },
+          {
+            "project-label": "Frontend Mentor Челлендж",
+            "project-name": "ОДНОСТРАНИЧНОЕ ДИЗАЙН-ПОРТФОЛИО",
+            "project-description": "Погрузитесь в безупречное, одностраничное, визуально-впечатляющее дизайн-портфолио, демонстрирующее изысканные произведения и креативность.",
+            "project-button": "Посмотреть проект"
+          },
+          {
+            "project-label": "Frontend Mentor Челлендж",
+            "project-name": "ГАЛЕРЕЯ СОВРЕМЕННОГО ИСКУССТВА",
+            "project-description": "Исследуйте виртуальную художественную галерею, демонстрирующую захватывающие шедевры разнообразных художников со всего мира на потрясающих выставках.",
+            "project-button": "Посмотреть проект"
+          },
+          {
+            "project-label": "Frontend Mentor Челлендж",
+            "project-name": "ОДНОСТРАНИЧНОЕ ПОРТФОЛИО РАЗРАБОТЧИКА",
+            "project-description": "Почувствуйте элегантное одностраничное портфолио разработчика, демонстрирующее опыт в программировании и инновационные проекты с изяществом.",
+            "project-button": "Посмотреть проект"
+          }
+        ]
+      },
+      "about": {
+        "about-heading": "Моя история",
+        "about-description1": {
+          "span1": "",
+          "mark": "Фронтенд-разработчик",
+          "span2": "из Душанбе, два месяца учился программированию в Илмхоне, где добился высоких результатов. После этого я продолжил свой путь программирования в течение шести месяцев в Softclub, центре программирования, который набирает популярность за последние два года. Помимо посещения учебных курсов, я занимаюсь созданием интерактивных проектов."
+        },
+        "about-description2": "На данный момент у меня нет коммерческого опыта.",
+        "about-stack_heading": "Мой веб-стек"
+      },
+      "contact": {
+        "contact-form": {
+          "form-heading": "Связаться",
+          "form-description": "Вопросы? Я очень готов услышать от тебя",
+          "label-name": "Имя",
+          "placeholder-name": "Имя *",
+          "label-email": "Ваш Email",
+          "placeholder-email": "Email *",
+          "label-subject": "Тема",
+          "placeholder-subject": "Тема *",
+          "label-message": "Сообщение",
+          "placeholder-message": "Сообщение *",
+          "form-btn": "Отправить сообщение"
+        },
+        "contact-list": [
+          {
+            "item-heading": "ТЕЛЕФОН",
+            "item-body":"+992 989 155 768"
+          },
+          {
+            "item-heading": "EMAIL",
+            "item-body":"islomihsan@gmail.com"
+          },
+          {
+            "item-heading": "МЕСТОПОЛОЖЕНИЕ",
+            "item-body": "Душанбе, Таджикистан"
+          }
+        ]
       }
     },
     "tajik": {

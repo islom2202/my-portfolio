@@ -28,13 +28,11 @@
         <ul>
           <li><a href="#home" class="home active" data-name="home">Home</a></li>
           <li>
-            <a href="#projects" class="projects" data-name="projects"
-              >Projects</a
-            >
+            <a href="#projects" class="projects" data-name="projects">Projects</a>
           </li>
           <li><a href="#about" class="about" data-name="about">About</a></li>
           <li>
-            <a href="#">
+            <a class="download_tags">
               <img src="assets/icons/download.png" alt="download" draggable="false">
               <span class="cv" data-name="cv">CV</span>
             </a>
@@ -43,7 +41,7 @@
             <select class="nav__languages">
               <option value="english" class="lang">En</option>
               <option value="russian" class="lang">Ru</option>
-              <option value="tajik" class="lang">Tj</option>
+              <!-- <option value="tajik" class="lang">Tj</option> -->
             </select>
           </li>
         </ul>
@@ -64,7 +62,7 @@
           </li>
           <li><a href="#about" class="about" data-name="about">About</a></li>
           <li>
-            <a href="#">
+            <a class="download_tags">
               <img src="assets/icons/download.png" alt="download" draggable="false">
               <span class="cv" data-name="cv">CV</span>
             </a>
@@ -73,7 +71,7 @@
             <select class="nav__languages">
               <option value="english" class="lang">En</option>
               <option value="russian" class="lang">Ru</option>
-              <option value="tajik" class="lang">Tj</option>
+              <!-- <option value="tajik" class="lang">Tj</option> -->
             </select>
           </li>
           <li><a href="#contact" class="getInTouch"   data-name="btn">Contact</a></li>
@@ -108,9 +106,9 @@
           <figure class="projects-article__list__item">
             <img src="assets/images/softclub.png" alt="softclub" />
             <figcaption>
-              <mark>Frontend Part clone</mark>
-              <h4>SoftClub - programming center</h4>
-              <p>
+              <mark data-name="project-label">Frontend Part clone</mark>
+              <h4 data-name="project-name">SoftClub - programming center</h4>
+              <p data-name="project-description">
                 Softclub provides high-quality bootcamps and the best
                 instructors to teach you programming
               </p>
@@ -118,6 +116,7 @@
                 class="button button--tertiary"
                 href="https://softclub.vercel.app/"
                 target="_blank"
+                data-name="project-button"
                 >View Project</a
               >
             </figcaption>
@@ -128,9 +127,9 @@
               alt="designer-portfolio"
             />
             <figcaption>
-              <mark>Frontend Mentor Challenge</mark>
-              <h4>Single-page design portfolio</h4>
-              <p>
+              <mark data-name="project-label">Frontend Mentor Challenge</mark>
+              <h4 data-name="project-name">Single-page design portfolio</h4>
+              <p data-name="project-description">
                 Immerse yourself in a seamless, visually striking single-page
                 design portfolio showcasing exquisite artworks and creativity.
               </p>
@@ -138,6 +137,7 @@
                 class="button button--tertiary"
                 href="https://islom2202.github.io/single-page-design-portfolio/"
                 target="_blank"
+                data-name="project-button"
                 >View Project</a
               >
             </figcaption>
@@ -148,9 +148,9 @@
               alt="art-gallery-website"
             />
             <figcaption>
-              <mark>Frontend Mentor Challenge</mark>
-              <h4>MODERN ART GALLERY</h4>
-              <p>
+              <mark data-name="project-label">Frontend Mentor Challenge</mark>
+              <h4 data-name="project-name">MODERN ART GALLERY</h4>
+              <p data-name="project-description">
                 Explore a virtual art gallery showcasing captivating
                 masterpieces from diverse artists worldwide in stunning
                 exhibitions.
@@ -159,6 +159,7 @@
                 class="button button--tertiary"
                 href="https://islom2202.github.io/Art-gallery-website/"
                 target="_blank"
+                data-name="project-button"
                 >View Project</a
               >
             </figcaption>
@@ -169,9 +170,9 @@
               alt="developer-portfolio"
             />
             <figcaption>
-              <mark>Frontend Mentor Challenge</mark>
-              <h4>Single-page developer portfolio</h4>
-              <p>
+              <mark data-name="project-label">Frontend Mentor Challenge</mark>
+              <h4 data-name="project-name">Single-page developer portfolio</h4>
+              <p data-name="project-description">
                 Experience a sleek single-page developer portfolio showcasing
                 coding expertise and innovative projects with finesse.
               </p>
@@ -179,6 +180,7 @@
                 class="button button--tertiary"
                 href="https://islom2202.github.io/single-page-developer-portfolio/"
                 target="_blank"
+                data-name="project-button"
                 >View Project</a
               >
             </figcaption>
@@ -190,13 +192,15 @@
         <div class="about-article__imgWrapper"><!--img is set in css--></div>
         <figcaption class="about-article__figcaption">
           <h3>
-            My background
+            <span>My background</span>
             <span class="material-symbols-rounded">subtitles</span>
           </h3>
-          <p>
-            A <mark>frontend developer</mark> from Dushanbe, I have been learning programming for two months at Ilmhona, where I achieved high scores. Following that, I continued my programming journey for six months at Softclub, a programming center that has been gaining popularity over the last two years. Alongside attending bootcamps, I have been building interactive projects.
+          <p class="about-article__figcaption__description1">
+            <span data-name="span1">A</span> 
+            <mark data-name="mark">frontend developer</mark>
+            <span data-name="span2">from Dushanbe, I have been learning programming for two months at Ilmhona, where I achieved high scores. Following that, I continued my programming journey for six months at Softclub, a programming center that has been gaining popularity over the last two years. Alongside attending bootcamps, I have been building interactive projects.</span>
           </p>
-          <p>For now I have no commercial experience.</p>
+          <p data-name="about-description2" class="about-article__figcaption__description2">For now I have no commercial experience.</p>
           <div class="about-article__figcaption__icons">
             <a href="https://github.com/islom2202" target="_blank">
               <img draggable="false" src="assets/icons/github.png" alt="github">
@@ -212,7 +216,7 @@
       </figure>
       <div class="about-stack">
         <h3 class="about-stack__heading">
-          <span>My <mark>web</mark>-stack</span>
+          <span>My web-stack</span>
           <span class="material-symbols-outlined">web</span> 
         </h3>
           <ul class="about-stack__list">
@@ -228,23 +232,23 @@
       <article class="contact" id="contact">
         <form class="contact__form" action="https://formsubmit.co/islomihsan@gmail.com" method="POST">
           <h4>Get in touch</h4>
-          <p>Any questions? I am very reafy to hear from you</p>
+          <p>Any questions? I am very ready to hear from you</p>
           <div class="contact__form__inputs">
             <div>
-              <label for="name">First name</label>
+              <label for="name" class="label-name">First name</label>
               <input id="name" name="name" placeholder="Name *" required>
             </div>
             <div>
-              <label for="email">Your Email</label>
+              <label for="email" class="label-email">Your Email</label>
               <input type="email" id="email" name="email" placeholder="Email *" required>
             </div>
           </div>
           <div class="contact__form__subject">
-            <label for="subject">Subject</label>
+            <label for="subject" class="label-subject">Subject</label>
             <input id="subject" name="subject" placeholder="Subject *" required>
           </div>
           <div class="contact__form__message">
-            <label for="message">Your message</label>
+            <label for="message" class="label-message">Your message</label>
             <textarea id="message" name="message" rows="4" placeholder="Your message *" required></textarea>
           </div>
           <button type="submit" class="button button--tertiary">SEND MESSAGE</button>
@@ -267,7 +271,7 @@
           <li class="contact__list__item">
             <img src="assets/icons/address.png" alt="address">
             <div class="contact__list__item__content">
-              <p>My Location</p>
+              <p>LOCATION</p>
               <p>Dushanbe, Tajikistan</p>
             </div>
           </li>

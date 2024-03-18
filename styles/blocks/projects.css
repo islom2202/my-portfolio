@@ -32,14 +32,14 @@
   animation: appear forwards;
   animation-timeline: view();
   animation-range-start: cover 0%;
-  animation-range-end: cover 50%;
+  animation-range-end: cover 30%;
 }
 .projects-article__list__item img{
   transform: translate(calc(-1 * var(--mobile-inline)));
   animation: fly-in-right forwards;
   animation-timeline: view();
   animation-range-start: cover 0%;
-  animation-range-end: cover 50%;
+  animation-range-end: cover 10%;
 }
 .projects-article__list__item:nth-child(even) img{
   transform: translate(var(--mobile-inline));
@@ -104,11 +104,25 @@
   .projects-article__list__item:nth-child(even) figcaption{
     order: -1;
   }
+  .projects-article__list__item img{
+    transform: translate(calc(-1 * var(--tablet-xl-inline)));
+    animation-range-start: cover 0%;
+    animation-range-end: cover 40%;
+  }
+  .projects-article__list__item:nth-child(even) img{
+    transform: translate(var(--tablet-xl-inline));
+  }
 }
 /*desktop*/
 @media (min-width: 1450px) {
   .projects-article{
     padding-inline: var(--desktop-inline);
+  }
+  .projects-article__list__item img{
+    transform: translate(calc(-1 * var(--desktop-inline)));
+  }
+  .projects-article__list__item:nth-child(even) img{
+    transform: translate(var(--desktop-inline));
   }
 }
 /*desktop-xl*/
