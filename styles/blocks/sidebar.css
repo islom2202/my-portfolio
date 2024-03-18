@@ -17,7 +17,7 @@
   align-items: center;
   color: var(--gray--secondary);
 }
-.sidebar__nav ul .active, .sidebar__nav ul li:hover a {
+.sidebar__nav ul .active {
  color: var(--blue--tertiary);
  text-decoration: underline .1rem dashed var(--blue--primary);
  text-underline-offset: .5rem;
