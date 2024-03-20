@@ -35,7 +35,7 @@ import {
 } from "../selectors/dom-variables.js"
 
 
-export const handleLang = async(e) => {
+export const handleLang = async (e) => {
   const header = [home, about, projects, cv, btn]
   const hero = [hero_name, hero_description, hero_btn, hero_btn_view_projects]
   const projects_section = [project_labels, project_headings, project_descriptions,project_buttons]
