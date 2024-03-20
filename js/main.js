@@ -17,11 +17,11 @@ import { hadnle_cv_path } from "./functions/cv_lang_path.js"
 
 // default functions (onload waits all thing to run first, including fetching, while DOMContentLoaded runs faster but doesn't for async functions here)
 window.onload = () => {
-  const loc_lang = localStorage.getItem("lang") || "english"
+  const loc_lang = sessionStorage.getItem("lang") || "english"
   handleLang(loc_lang)
 }
 document.addEventListener("DOMContentLoaded", () => {
-  const loc_lang = localStorage.getItem("lang") || "english"
+  const loc_lang = sessionStorage.getItem("lang") || "english"
   select_languages.forEach((select) => (select.value = loc_lang))
   hadnle_cv_path(loc_lang)
 })
@@ -31,7 +31,7 @@ burger.onclick = () => handleSidebar(burger, sidebar)
 // handle-language -- two select tags one from header another from sidebar
 select_languages.forEach((select) => {
   select.onchange = (e) => {
-    localStorage.setItem("lang", e.target.value)
+    sessionStorage.setItem("lang", e.target.value)
     handleLang(e.target.value)
     hadnle_cv_path(e.target.value)
   }
@@ -42,6 +42,5 @@ document.documentElement.style.setProperty(
   "--headers-height",
   header_height + "px"
 )
-
 // hanlde active link
 window.onscroll = () => handleActiveLink(home_section, projects_section, about_section, header_height)
