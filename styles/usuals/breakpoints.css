@@ -2,7 +2,7 @@
 :root{
   --mobile: 375px;
   --tablet: 768px;
-  --tablet-xl: 1000px;
+  --tablet-xl: 900px;
   --desktop: 1450px;
   --desktop-xl: 1800px;
   --mobile-inline: 5%;

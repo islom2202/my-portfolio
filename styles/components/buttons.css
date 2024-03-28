@@ -1,5 +1,6 @@
+/*-----------mobile*/
 .button{
-  padding: 1.1rem 3rem;
+  padding: 1.1rem 1.5rem;
   border-radius: 1rem;
   color: var(--white);
   cursor: pointer;
@@ -36,4 +37,11 @@
 /*Active effects*/
 .button:active{
   opacity: .5;
+}
+
+/*-----------desktop*/
+@media (min-width: 1450px) {
+  .button{
+    padding: 1.1rem 3rem;
+  }
 }

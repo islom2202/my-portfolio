@@ -82,7 +82,7 @@
   text-transform: uppercase;
 }
 /*tablet-xl*/
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   .projects-article{
     padding-inline: var(--tablet-xl-inline);
   }
