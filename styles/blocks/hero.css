@@ -63,7 +63,7 @@
 
 
 /*tablet-xl*/
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   .hero{
     padding-inline: var(--tablet-xl-inline);
     flex-direction: row;

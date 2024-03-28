@@ -2,11 +2,11 @@
 :root{
   --mobile: 375px;
   --tablet: 768px;
-  --tablet-xl: 900px;
+  --tablet-xl: 1000px;
   --desktop: 1450px;
   --desktop-xl: 1800px;
   --mobile-inline: 5%;
-  --tablet-xl-inline: 7%;
+  --tablet-xl-inline: 5%;
   --desktop-inline: 10%;
   --desktop-xl-inline:20%;
 }

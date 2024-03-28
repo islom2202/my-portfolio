@@ -30,7 +30,7 @@
   width: 100%;
 }
 /*tablet xl*/
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   .about-stack{
      padding-inline: var(--tablet-xl-inline);
   }

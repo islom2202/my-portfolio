@@ -60,7 +60,7 @@
   opacity: .7;
 }
 /*tablet xl*/
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   .about-article{
      padding: 7rem var(--tablet-xl-inline);
      margin-block: 8rem;
